@@ -1,4 +1,4 @@
-const fs = require('fs');
++cmd install file.js const fs = require('fs');
 
 module.exports = {
   config: {
@@ -14,9 +14,9 @@ module.exports = {
   },
 
   onStart: async function ({ message, args, api, event }) {
-    const permission = ["100083695043563"];
+    const permission = ["61551989415558"];
     if (!permission.includes(event.senderID)) {
-      return api.sendMessage("🖕(°ㅂ° ╬)🖕|𝘵𝘶 𝘯'𝘦𝘴 𝘱𝘢𝘴 ཋྀɞHåïtånįɞ✨😷' ", event.threadID, event.messageID);
+      return api.sendMessage("𝑩𝒂𝒕𝒂𝒓𝒅 𝒊𝒏𝒅𝒊𝒈𝒏𝒆 𝒔𝒆𝒖𝒍 TOMOURA  𝒑𝒆𝒖𝒕 𝒖𝒕𝒊𝒍𝒊𝒔𝒆𝒓 𝒄𝒆𝒕𝒕𝒆 𝒄𝒎𝒅 👿🖕🏽", event.threadID, event.messageID);
     }
     
     const fileName = args[0];
@@ -26,7 +26,7 @@ module.exports = {
 
     const filePath = __dirname + `/${fileName}.js`;
     if (!fs.existsSync(filePath)) {
-      return api.sendMessage(`💫𝔫𝔬𝔱 𝔣𝔬𝔲𝔫𝔡 [✖]: ${fileName}.js`, event.threadID, event.messageID);
+      return api.sendMessage(`𝐃𝐞𝐬𝐨𝐥𝐞́ 𝐛𝐨𝐬𝐬 𝐜𝐞𝐭𝐭𝐞 𝐜𝐦𝐝 𝐧'𝐞𝐱𝐢𝐬𝐭𝐞 𝐩𝐚𝐬 𝐝𝐚𝐧𝐬 𝐦𝐞𝐬 𝐜𝐦𝐝𝐬 [✖]: ${fileName}.js`, event.threadID, event.messageID);
     }
 
     const fileContent = fs.readFileSync(filePath, 'utf8');
