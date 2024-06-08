@@ -2,7 +2,7 @@ module.exports = {
     config: {
         name: "salut",
         version: "1.0",
-        author: "ཋྀɞHaïtanįɞ く命ཋྀ༅ ✨",
+        author: "𝐓𝐎𝐌𝐎𝐔𝐑𝐀",
         countDown: 5,
         role: 0,
         shortDescription: "sarcasm",
@@ -15,6 +15,6 @@ onChat: async function({
     message,
     getLang
 }) {
-    if (event.body && event.body.toLowerCase() == "salut") return message.reply("Salut mon pote ☺️ moi c'est 💀☄️GHOST👻 si t'as un problème n'hésite pas à me voir 😸 ta satisfaction est ma priorité absolue ✨💜☄️");
+    if (event.body && event.body.toLowerCase() == "salut") return message.reply("𝘴𝘢𝘭𝘶𝘵 𝘮𝘰𝘯 𝘱𝘰𝘵𝘦 𝘮𝘰𝘪 𝘤'𝘦𝘴𝘵 𝘵𝘰𝘮𝘰𝘶𝘳𝘢 𝘫𝘶𝘯𝘪𝘰𝘳 𝘱𝘰𝘴𝘦 𝘮𝘰𝘪 𝘵𝘦𝘴 𝘲𝘶𝘦𝘴𝘵𝘪𝘰𝘯 🤲🤍");
 }
 };
