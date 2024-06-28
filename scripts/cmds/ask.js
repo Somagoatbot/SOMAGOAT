@@ -18,7 +18,7 @@ async function getAIResponse(input, userId, messageID) {
     { url: 'https://ai-chat-gpt-4-lite.onrender.com/api/hercai', params: { question: input } }
   ];
 
-  let response = "⚪TOMOURA く悔 🟢 \n.....................\n 𝒔𝒂𝒍𝒖𝒕 𝒂𝒍𝒍𝒆𝒛-𝒚 𝒑𝒐𝒔𝒆́ 𝒗𝒐𝒕𝒓𝒆 𝒒𝒖𝒆𝒔𝒕𝒊𝒐𝒏🇨🇮";
+  let response = "GOATBOT く悔 🟢 \n.....................\n POSE TA QUESTION 🛀💢";
   let currentIndex = 0;
 
   for (let i = 0; i < services.length; i++) {
@@ -45,19 +45,19 @@ module.exports = {
   onStart: async function ({ api, event, args }) {
     const input = args.join(' ').trim();
     if (!input) {
-      api.sendMessage(`✰..𝐓𝐎𝐌𝐎𝐔𝐑𝐀..✰く悔\n━━━━━━━━━━━━━━━━━\nPlease provide a question or statement.\n━━━━━━━━━━━━━━━━━\n✰..𝐓𝐎𝐌𝐎𝐔𝐑𝐀..✰く悔`, event.threadID, event.messageID);
+      api.sendMessage(`✰..SOMAGOAT..✰く悔\n━━━━━━━━━━━━━━━━━\nPlease provide a question or statement.\n━━━━━━━━━━━━━━━━━\n✰ SOMAGOATBOT..✰く悔`, event.threadID, event.messageID);
       return;
     }
 
     const { response, messageID } = await getAIResponse(input, event.senderID, event.messageID);
-    api.sendMessage(`✰..𝐓𝐎𝐌𝐎𝐔𝐑𝐀..✰く悔\n━━━━━━━━━━━━━━━━━\n${response}\n━━━━━━━━━━━━━━━━━\n➳..𝐓𝐎𝐌𝐎𝐔𝐑𝐀..✰く悔`, event.threadID, messageID);
+    api.sendMessage(`✰..SOMAGOAT..✰く悔\n━━━━━━━━━━━━━━━━━\n${response}\n━━━━━━━━━━━━━━━━━\n➳..SOMAGOAT..✰く悔`, event.threadID, messageID);
   },
   onChat: async function ({ event, message }) {
     const messageContent = event.body.trim().toLowerCase();
     if (messageContent.startsWith("ai")) {
       const input = messageContent.replace(/^ai\s*/, "").trim();
       const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
-      message.reply(`✰..𝐓𝐎𝐌𝐎𝐔𝐑𝐀..✰く悔\n━━━━━━━━━━━━━━━━━\n${response}\n━━━━━━━━━━━━━━━━━\n➳..𝐓𝐎𝐌𝐎𝐔𝐑𝐀..✰く悔`, messageID);
+      message.reply(`✰..SOMAGOAT..✰く悔\n━━━━━━━━━━━━━━━━━\n${response}\n━━━━━━━━━━━━━━━━━\n➳..SOMAGOAT..✰く悔`, messageID);
     }
   }
 };
